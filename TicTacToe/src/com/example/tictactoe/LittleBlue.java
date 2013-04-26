@@ -23,8 +23,14 @@ import java.util.List;
  * goes first once once in this version. consecutive resets will always
  * the user go first.
  * 
+ * UPDATE. Scoring logic has been added. Tilt to reset.
+ * 
  * There is a method to check the player two's move but it is not
  * implemented anywhere. or tested.
+ * 
+ * UPDATE
+ * 
+ * Done
  * 
  * otherwise have fun
  * 
