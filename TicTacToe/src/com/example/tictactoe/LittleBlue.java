@@ -307,6 +307,24 @@ public class LittleBlue extends Activity {
 
     	}
 	
+    	
+    	if (takenSquares_.size() == 3) {
+    		
+    		Log.e(getClass().getSimpleName(), "takenSquares_. = " + takenSquares_.get(0));
+
+    		if((usedByPlayer(playerTwo, new Point(0,0)) 
+    				&& usedByPlayer(playerTwo, new Point(2,2)))
+        			|| 
+        			(usedByPlayer(playerTwo, new Point(0,2))) 
+        				&& (usedByPlayer(playerTwo, new Point(2,0)))) {
+
+				possibilities.add(new Possibility(5, new Point(0,1)));
+
+    	
+    		}		
+    		
+    	}
+    	
     	//carry on
     	for(int i=0;i<3;i++) {
     	
